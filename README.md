@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/Y0shi23/day-in-news-20261118/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/Y0shi23/day-in-news-20261118/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-One front page for Wednesday 18 November 2026: the day's world news in nine illustrated stories, thirteen briefs and a map, drawn as HTML and SVG and rendered to a single 1024 x 1024 PNG for [make.fun's daily news-image bounty](https://make.fun/bounty/news-image-20261118).
+One front page for Wednesday 18 November 2026: the day's world news in nine illustrated stories, 27 briefs and a map, drawn as HTML and SVG and rendered to a single 1024 x 1024 PNG for [make.fun's daily news-image bounty](https://make.fun/bounty/news-image-20261118).
 
 - `poster.html` is the page: layout, hand-drawn SVG illustrations and a dot-matrix world map.
 - `render.mjs` renders it to `entry.png` with a headless Chromium browser (build time only).
