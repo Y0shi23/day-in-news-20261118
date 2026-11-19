@@ -62,7 +62,7 @@
   /* Story tags: region, topic and who says so */
   .tag { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; color: var(--c); text-transform: uppercase; white-space: nowrap; }
   .num { display: inline-grid; place-items: center; width: 19px; height: 19px; border-radius: 50%; background: var(--c); color: #fff; font-size: 10.5px; letter-spacing: 0; flex: none; }
-  .src { margin-left: auto; font-size: 8.4px; letter-spacing: 1px; color: #7a8090; font-weight: 700; }
+  .src { margin-left: auto; font-size: 8.8px; line-height: 11px; letter-spacing: .8px; color: #3f4656; font-weight: 700; border: 1px solid #a9b0bc; border-radius: 2px; padding: 0 4px; background: #fff; flex: none; }
 
   /* Lead stories */
   .leads { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 10px 24px 0; }
@@ -95,12 +95,13 @@
   .card svg { display: block; width: 100%; height: 54px; }
   .card .body { padding: 5px 8px 6px; }
   .card .tag { font-size: 9.2px; letter-spacing: 1.2px; gap: 5px; }
+  .card .src { letter-spacing: .4px; padding: 0 3px; }
   .card .num { width: 17px; height: 17px; font-size: 9.5px; }
   .card h3 { font: 700 15.4px/18px Georgia, serif; margin-top: 4px; }
   .card p { font-size: 11.2px; line-height: 14px; color: var(--muted); margin-top: 3px; }
 
   /* Bottom: map, numbers and one-line briefs */
-  .bottom { display: grid; grid-template-columns: 346px 1fr; gap: 18px; padding: 0 24px; margin-top: 10px; }
+  .bottom { display: grid; grid-template-columns: 346px minmax(0, 1fr); gap: 18px; padding: 0 24px; margin-top: 10px; }
   .mapbox { background: #e4e9e6; border-radius: 3px; padding: 7px 8px 5px; }
   .boxhead { font-size: 10.5px; font-weight: 700; letter-spacing: 2.2px; color: var(--navy); }
   #map { display: block; margin-top: 4px; }
@@ -111,9 +112,10 @@
   .numbers b { display: block; font: 700 18px/20px Georgia, serif; color: var(--navy); }
   .numbers span { font-size: 10px; line-height: 12px; color: var(--muted); }
   .briefs h4 { font-size: 11.5px; font-weight: 700; letter-spacing: 2.2px; color: var(--navy); border-bottom: 2px solid var(--ink); padding-bottom: 4px; }
-  .briefs ol { list-style: none; columns: 2; column-gap: 18px; margin-top: 1px; }
-  .briefs li { break-inside: avoid; display: flex; gap: 6px; font-size: 11.3px; line-height: 13.2px; padding: 2.1px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  .briefs ol { list-style: none; columns: 2; column-gap: 14px; margin-top: 1px; }
+  .briefs li { break-inside: avoid; display: flex; gap: 5px; font-size: 11.3px; line-height: 13.2px; padding: 2.1px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
   .briefs li i { font-style: normal; font-weight: 700; color: var(--c); width: 17px; flex: none; }
+  .briefs li .src { font-size: 8.2px; line-height: 10px; letter-spacing: .3px; padding: 0 2px; align-self: center; text-transform: uppercase; font-style: normal; }
   .datecheck { margin-top: 6px; padding: 3px 8px 3px 9px; border-left: 3px solid var(--mideast); background: #f2e1d8; font-size: 10.4px; line-height: 13px; color: var(--ink); }
   .datecheck b { color: var(--mideast); letter-spacing: 1.6px; margin-right: 5px; }
   footer { position: absolute; left: 24px; right: 24px; bottom: 7px; display: flex; justify-content: space-between; font-size: 9.6px; color: var(--muted); border-top: 1px solid #b9b19f; padding-top: 4px; }
@@ -255,7 +257,7 @@
       <text x="199" y="51" fill="#14213d" font-size="8" font-weight="700" text-anchor="middle" font-family="Helvetica Neue, Arial">126 DOWNED</text>
     </svg>
     <div class="body">
-      <div class="tag"><span class="num">4</span>Europe · Ukraine war<span class="src">AIR FORCE</span></div>
+      <div class="tag"><span class="num">4</span>Europe · Ukraine<span class="src">AIR FORCE</span></div>
       <h3>Russia fires 141 drones at Ukraine; 126 downed</h3>
       <p>Hits at seven sites overnight; attacks kill four in Donetsk region, its governor says.</p>
     </div>
@@ -425,7 +427,7 @@
       </g>
     </svg>
     <div class="body">
-      <div class="tag"><span class="num">11</span>Americas · US politics<span class="src">NPR · CBS</span></div>
+      <div class="tag"><span class="num">11</span>Americas · Congress<span class="src">NPR · CBS</span></div>
       <h3>Jeffries wins Democrats’ nod for House Speaker</h3>
       <p>A 251–11 caucus vote puts him on course to be the first Black Speaker in January.</p>
     </div>
@@ -446,41 +448,41 @@
   <div class="briefs">
     <h4>ALSO ON WEDNESDAY 18 NOVEMBER</h4>
     <ol>
-      <li class="asia"><i>12</i><span><b>Manila:</b> Trump hails ‘biggest’ Philippine trade deal</span></li>
-      <li class="asia"><i>13</i><span><b>Quad</b> leaders meet in Manila, first in over two years</span></li>
-      <li class="asia"><i>14</i><span><b>Japan:</b> Takaichi makes first China visit as PM</span></li>
-      <li class="asia"><i>15</i><span><b>Canada–China:</b> Carney and Xi agree tariff relief</span></li>
-      <li class="asia"><i>16</i><span><b>South Korea:</b> Lee seeks Xi’s help on the North</span></li>
-      <li class="asia"><i>17</i><span><b>Bangladesh:</b> police tear-gas garment wage protests</span></li>
-      <li class="mideast"><i>18</i><span><b>Riyadh:</b> coalition downs a Houthi cruise missile</span></li>
-      <li class="mideast"><i>19</i><span><b>Australia</b> sanctions settler leader Daniella Weiss</span></li>
-      <li class="europe"><i>20</i><span><b>Germany</b> pledges air defences, F-16 arms to Kyiv</span></li>
-      <li class="europe"><i>21</i><span><b>Kosovo:</b> ex-president Thaçi gets 17 months</span></li>
-      <li class="europe"><i>22</i><span><b>Russia:</b> 19 die in Kemerovo plane crash, media say</span></li>
-      <li class="europe"><i>23</i><span><b>UK</b> hands US Army spy suspect to US custody</span></li>
-      <li class="africa"><i>24</i><span><b>Mozambique:</b> opposition leader Mondlane on trial</span></li>
-      <li class="africa"><i>25</i><span><b>Guinea</b> jails 224 over illegal gold mining</span></li>
-      <li class="africa"><i>26</i><span><b>Mauritius</b> sets UK a December Chagos deadline</span></li>
-      <li class="africa"><i>27</i><span><b>Ethiopia–Eritrea:</b> artillery fire near Badme</span></li>
-      <li class="africa"><i>28</i><span><b>South Africa</b> reprimands Nigeria’s new envoy</span></li>
-      <li class="africa"><i>29</i><span><b>DR Congo:</b> Ebola adds 400–500 cases a week, WHO</span></li>
-      <li class="americas"><i>30</i><span><b>Anthropic</b> prices IPO at $83, above its range</span></li>
-      <li class="americas"><i>31</i><span><b>Rubio:</b> no sign of cyberattack behind outages</span></li>
-      <li class="americas"><i>32</i><span><b>Venezuela:</b> unions call 24-hour strike over pay</span></li>
-      <li class="americas"><i>33</i><span><b>Colombia:</b> economy shrinks 0.8% in Q3</span></li>
-      <li class="americas"><i>34</i><span><b>Paraguay:</b> attorney general quits before impeachment</span></li>
-      <li class="americas"><i>35</i><span><b>Peru:</b> Tumbes River passes red alert</span></li>
-      <li class="global"><i>36</i><span><b>GTA VI</b> goes on sale, with New Zealand first</span></li>
-      <li class="global"><i>37</i><span><b>COP31:</b> ministers weigh a divided draft in Antalya</span></li>
-      <li class="global"><i>38</i><span><b>FIFA:</b> France’s Diallo to challenge Infantino</span></li>
+      <li class="asia"><i>12</i><span><b>Manila:</b> Trump hails ‘biggest’ trade deal</span><em class="src">Philstar</em></li>
+      <li class="asia"><i>13</i><span><b>Quad</b> meets in Manila, first in over two years</span><em class="src">AA</em></li>
+      <li class="asia"><i>14</i><span><b>Japan:</b> Takaichi’s first China trip as PM</span><em class="src">The Standard</em></li>
+      <li class="asia"><i>15</i><span><b>Canada–China:</b> Carney and Xi agree tariff relief</span><em class="src">AA</em></li>
+      <li class="asia"><i>16</i><span><b>Seoul:</b> Lee seeks Xi’s help on the North</span><em class="src">Korea Times</em></li>
+      <li class="asia"><i>17</i><span><b>Bangladesh:</b> police tear-gas wage protests</span><em class="src">AP</em></li>
+      <li class="mideast"><i>18</i><span><b>Riyadh:</b> coalition downs a Houthi cruise missile</span><em class="src">AA</em></li>
+      <li class="mideast"><i>19</i><span><b>Australia</b> sanctions settler leader Weiss</span><em class="src">ABC AU</em></li>
+      <li class="europe"><i>20</i><span><b>Germany</b> pledges air defences, F-16 arms to Kyiv</span><em class="src">AA</em></li>
+      <li class="europe"><i>21</i><span><b>Kosovo:</b> ex-president Thaçi gets 17 months</span><em class="src">AA</em></li>
+      <li class="europe"><i>22</i><span><b>Siberia:</b> plane crash kills 19, media say</span><em class="src">AA</em></li>
+      <li class="europe"><i>23</i><span><b>UK</b> hands US Army spy suspect to US custody</span><em class="src">AA</em></li>
+      <li class="africa"><i>24</i><span><b>Mozambique:</b> Mondlane’s trial goes on</span><em class="src">allAfrica</em></li>
+      <li class="africa"><i>25</i><span><b>Guinea</b> jails 224 over illegal gold mining</span><em class="src">allAfrica</em></li>
+      <li class="africa"><i>26</i><span><b>Mauritius</b> sets UK a December Chagos deadline</span><em class="src">AA</em></li>
+      <li class="africa"><i>27</i><span><b>Ethiopia–Eritrea:</b> artillery fire near Badme</span><em class="src">allAfrica</em></li>
+      <li class="africa"><i>28</i><span><b>Pretoria</b> reprimands Nigeria’s new envoy</span><em class="src">allAfrica</em></li>
+      <li class="africa"><i>29</i><span><b>Uganda:</b> Byanyima urges Besigye release</span><em class="src">allAfrica</em></li>
+      <li class="americas"><i>30</i><span><b>Anthropic</b> prices IPO at $83, above its range</span><em class="src">CNBC</em></li>
+      <li class="americas"><i>31</i><span><b>Rubio:</b> no sign of cyberattack behind outages</span><em class="src">AA</em></li>
+      <li class="americas"><i>32</i><span><b>Venezuela:</b> unions call 24-hour strike over pay</span><em class="src">AA</em></li>
+      <li class="americas"><i>33</i><span><b>Colombia:</b> economy shrinks 0.8% in Q3</span><em class="src">Rio Times</em></li>
+      <li class="americas"><i>34</i><span><b>Paraguay:</b> attorney general quits under fire</span><em class="src">AA</em></li>
+      <li class="americas"><i>35</i><span><b>Peru:</b> Tumbes River passes red alert</span><em class="src">Rio Times</em></li>
+      <li class="global"><i>36</i><span><b>GTA VI</b> goes on sale, with New Zealand first</span><em class="src">AA</em></li>
+      <li class="global"><i>37</i><span><b>COP31:</b> ministers weigh a divided draft</span><em class="src">Rio Times</em></li>
+      <li class="global"><i>38</i><span><b>Tennis:</b> Alcaraz beats Medvedev 6–2, 6–4 in Turin</span><em class="src">ANI</em></li>
     </ol>
     <p class="datecheck"><b>DATE CHECK</b> Left out as Tuesday 17 November news: Nvidia’s results · the AP’s Alaska Senate call · the Board of Peace’s Gaza report · the Knesset speaker vote · Mongolia’s president’s offer to quit · the Kerch Bridge collapse.</p>
   </div>
 </section>
 
 <footer>
-  <span>All 38 stories happened, or were first reported, on Wednesday 18 November 2026; claims are attributed. Original drawings.</span>
-  <span>Sources: AP · Reuters · AFP · CNN · CNBC · NPR · Fed · ONS · IMD · NASA · Amnesty</span>
+  <span>All 38 stories happened, or were first reported, on Wednesday 18 November 2026. The boxed tag on each names its source; “says” marks a claim.</span>
+  <span>AA = Anadolu Agency · Original drawings</span>
 </footer>
 
 <script>
@@ -539,9 +541,9 @@
     ['asia', 121.0, 14.6], ['asia', 120.98, 14.55], ['asia', 113.9, 22.6], ['asia', 114.2, 22.4], ['asia', 114.0, 22.55], ['asia', 90.4, 24.0],
     ['mideast', 46.7, 24.7], ['mideast', 35.25, 31.9],
     ['europe', 13.4, 52.5], ['europe', 21.2, 42.7], ['europe', 86.1, 55.4], ['europe', -0.1, 51.5],
-    ['africa', 32.6, -25.9], ['africa', -9.2, 11.4], ['africa', 57.5, -20.2], ['africa', 37.8, 14.8], ['africa', 28.2, -25.7], ['africa', 21.7, -4.0],
+    ['africa', 32.6, -25.9], ['africa', -9.2, 11.4], ['africa', 57.5, -20.2], ['africa', 37.8, 14.8], ['africa', 28.2, -25.7], ['africa', 32.6, 0.3],
     ['americas', -122.4, 37.8], ['americas', -77.0, 38.9], ['americas', -66.9, 10.5], ['americas', -74.1, 4.7], ['americas', -57.6, -25.3], ['americas', -80.5, -3.6],
-    ['global', 174.8, -41.3], ['global', 30.7, 36.9], ['global', 8.5, 47.4],
+    ['global', 174.8, -41.3], ['global', 30.7, 36.9], ['global', 7.7, 45.1],
   ];
   const CELL = 5.09, X0 = 2, Y0 = 2;
   const svg = document.getElementById('map');
